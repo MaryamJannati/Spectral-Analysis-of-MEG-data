@@ -1,5 +1,5 @@
 function data = analyze_band(tfr_data, bandLimits, ROIs, parcels)
-% Regions of interest in your study that is defined in the main code
+% Regions of interest that are defined in the main code
 % parcels = TFRstructure.label (1:360); 
     [~, indices] = ismember(ROIs, parcels);
     bandlimits = find(tfr_data.freq > bandLimits(1) & tfr_data.freq < bandLimits(2));
